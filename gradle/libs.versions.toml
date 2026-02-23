@@ -20,7 +20,9 @@ gmsLocation = "21.3.0"
 work = "2.11.1"
 koin = "4.1.1"
 kotlinx-serialization = "1.10.0"
-
+androidTools = "32.0.1"
+ksp = "2.0.21-1.0.27"
+room = "2.8.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -51,6 +53,13 @@ koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = 
 koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
 koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization"}
+
+# Gradle
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
 
 
 [plugins]
