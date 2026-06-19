@@ -1,16 +1,12 @@
 plugins {
-    alias(libs.plugins.runtracker.android.application)
-}
+    alias(libs.plugins.runtracker.android.application.compose)
+    }
 
 android {
     namespace = "com.zahab.runtrackerapp"
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildFeatures {
-        compose = true
     }
 }
 
